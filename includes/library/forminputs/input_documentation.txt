@@ -1,0 +1,50 @@
+The system is based around the seperation of
+
+Generic level of abstraction (lowest)
+-------------------------------------------------------------------------
+1. Logic- 
+		PHP and fetching data from the database.
+
+2. Display 
+		Processing the array passed ready for output. Any essential HTML.
+
+3. Style
+		HTML, Input elements, anything that is specific to a style.
+
+
+Higher level of abstraction
+-------------------------------------------------------------------------
+
+* Specific form structures		
+
+-------------------------------------------------------------------------
+		
+		
+Specific form structures like 'show onsite' or 'pagetype' are constructed in the format -
+{
+	fetch data   //logic
+	display data //display and style
+}
+	
+Specific structures take the building blocks of the generic form elements and contruct more complex structures.
+This could be anything the programmer wants, but it should avoid having code that breaches the lower levels of abstration.
+
+Rather create the new building blocks using Logic, Display and style seperation and then uses them in this more complex 
+specific function. This is not always possible but MUST be upheld whenever possible. 
+
+Example- Image form structure - INCORRECT!
+{
+	Image_element
+}
+
+It would be wrong to define one function that did both these elements. Always break apart until it is 
+no longer possible
+
+Example- Image form structure - CORRECT!
+{
+	Image_button    
+	image_picture
+}
+
+
+The Logic, Display and Style must be provided for the lowest level of abstraction. 

@@ -1,0 +1,39 @@
+<!-- BUTTON -->
+
+<?  $btndata = getdata_btn("button","update",UPDATE,'updateme()'); 
+	display_btn($btndata,'default'); ?>
+	
+<!-- CHECKBOX -->
+<?	$checkboxdata = getdata_checkbox('approved', $row['approved'],0, 1);
+	display_checkbox($checkboxdata,'default');
+	helplink('show in library'); ?>	
+	
+<!-- MULTIPLE RADIO BUTTON -->
+
+$radiobtnsdata = getdata_radiobtns('userlevel', $row['userlevel'], arrays::genlist(1,5),array(SUPER,ADMINISTRATOR,PUBLISHER,EDITOR,DATAENTRY)); 
+display_radiobtns($radiobtnsdata,'brs');
+	
+<!-- TEXT INPUT -->
+
+<? 	$textdata = getdata_text('name', $row['name']); 
+	display_text($textdata, 'default');
+	helplink('') ?>
+	
+	
+<!-- TEXTAREA -->
+
+<? 	$textareadata = getdata_textarea('description', $row['description']); 
+	display_textarea($textareadata, 'default');
+	helplink('') ?>	
+	
+<!-- SELECT BOX -->
+
+<!-- FROM A DATABASE -->
+
+<?	$selectdata = formdata::getdata_select('typeid', 'type', $rowtype['typeid'], 'images_types', 0,0,0); 
+	    formdisplay::display_select($selectdata,'default'); 
+        helplink('type') ?>	
+        
+<!-- FROM A ARRAY -->
+
+ 

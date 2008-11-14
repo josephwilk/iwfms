@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JobDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Documents and Settings\Joseph\My Documents\Computing yr4\Masters Project\xml\jobDescription.xsd">
+	<db>
+		<dbName>hospital</dbName>
+		<dbContents>
+			<dbTablename>pharmacyTimetable</dbTablename>
+			<dbTableFields>
+				<dbFieldName>pharmacyCollection</dbFieldName>
+				<presentationName>Collection status</presentationName>
+			</dbTableFields>
+		</dbContents>
+		</db>
+</JobDescription>
