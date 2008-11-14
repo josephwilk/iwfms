@@ -1,10 +1,12 @@
 == iWFMS
 
-A Intelligent workflow management system. Specially looking at model the workflow of a hospital and drug distribution process.
+A Intelligent workflow management system. Specially looking at modelling the workflow of a hospital and drug distribution process.
 
 This is a copy of the code I wrote for my masters thesis. It was written in Prolog and PHP. 
 
 This is more for reference than a working system. Its nearly 4 years since I ran this so I cannot guarantee it will work straight out of the box.
+
+I'm also not supporting the code base.
 
 == Dependencies
 
